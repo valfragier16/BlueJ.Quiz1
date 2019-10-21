@@ -27,11 +27,13 @@ public class LoopFun
        */
       public String acronym(String phrase) {
           String firstLetters = "";
-          // splitting my string based on the spaces
+          // splitting my string based on the spaces --> phrase.split(" ")
           // iterate over the array
           for(String s : phrase.split(" ")){
+              // get the first letter of each word in string as it restarts after " "
               firstLetters += s.charAt(0);
             }
+            // return the string and set the letter to be UpperCase
           return firstLetters.toUpperCase();
       }
 
