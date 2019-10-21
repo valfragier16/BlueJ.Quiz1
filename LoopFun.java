@@ -27,7 +27,8 @@ public class LoopFun
        */
       public String acronym(String phrase) {
           String firstLetters = "";
-          phrase = phrase.replaceAll("[.,]", "");
+          // splitting my string based on the spaces
+          // iterate over the array
           for(String s : phrase.split(" ")){
               firstLetters += s.charAt(0);
             }
